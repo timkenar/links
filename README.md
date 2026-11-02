@@ -8,8 +8,8 @@ published as-is.
 
 ## Project layout
 
-```
-links/
+```text
+.
 ├── index.html                 the page (styles are inline)
 └── assets/
     ├── timothy.jpg            profile photo (from the YouTube channel)
@@ -66,18 +66,37 @@ Then open <http://localhost:8080>.
 
 ## Deploy
 
-The page is static, so any static host works. Because `ngazi.co.ke` is already
-on Cloudflare, Cloudflare Pages is the shortest path:
+The page is static, so any static host works. This repository already has
+`index.html` at the root, ready to publish.
 
-1. Push this folder to a Git repo, or drag the `links` folder into the Pages
-   dashboard.
-2. Create a Cloudflare Pages project with no build command and `/` as the
-   output directory (publish the contents of `links/`, not its parent).
+### GitHub Pages
+
+The repository is currently **private**, and GitHub Free only publishes Pages
+from public repositories. Either make the repository public (Settings →
+General → Danger Zone → Change visibility), or use a host that supports private
+repos such as Cloudflare Pages.
+
+Once the repo is public:
+
+1. Go to **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select `main` and `/ (root)`, then save.
+4. The site appears at <https://timkenar.github.io/links/>.
+
+For the custom domain `links.ngazi.co.ke`, add it under **Custom domain**, then
+in Cloudflare DNS add a `CNAME` for `links` pointing to `timkenar.github.io`
+with the proxy **disabled** (DNS only) so GitHub can issue its certificate.
+
+### Cloudflare Pages
+
+Because `ngazi.co.ke` is already on Cloudflare, this is the shortest path to the
+custom domain:
+
+1. Create a Cloudflare Pages project and connect this repository.
+2. No build command; set the output directory to `/`.
 3. Add the custom domain `links.ngazi.co.ke`.
 4. Cloudflare adds the DNS record automatically. If you add it manually, point
    `links` at the `*.pages.dev` hostname with the proxy enabled.
 
-Other hosts: on Render, create a **Static Site** with no build command and `.`
-as the publish directory, then add `links.ngazi.co.ke` as a custom domain. On
-GitHub Pages, add a file named `CNAME` containing `links.ngazi.co.ke` and set
-it as the custom domain in the repo settings.
+On Render, create a **Static Site** with no build command and `.` as the
+publish directory, then add `links.ngazi.co.ke` as a custom domain.
