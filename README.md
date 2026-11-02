@@ -1,7 +1,7 @@
 # Timothy Links
 
-A single-page personal link tree for **Timothy (@timkenar)**, currently served
-at `links.ngazi.co.ke` until the company page takes over the name.
+A single-page personal link tree for **Timothy (@timkenar)**, planned for
+`links.ngazi.co.ke` until the company page takes over the name.
 
 No build step, no dependencies. Everything lives in this folder, so it can be
 published as-is.
@@ -64,30 +64,64 @@ python3 -m http.server 8080
 
 Then open <http://localhost:8080>.
 
-## Deploy
+## Deploy with GitHub Pages
 
-The page is static, so any static host works. This repository already has
-`index.html` at the root, ready to publish.
+GitHub Pages serves this repository as-is — no build step and no workflow file
+needed.
 
-### GitHub Pages
+> **Visibility:** the repository is currently **private**. GitHub Free only
+> publishes Pages from public repositories. Make it public first (Settings →
+> General → Danger Zone → Change visibility → **Make public**), or keep it
+> private and use [Cloudflare Pages](#cloudflare-pages-alternative) instead.
 
-The repository is currently **private**, and GitHub Free only publishes Pages
-from public repositories. Either make the repository public (Settings →
-General → Danger Zone → Change visibility), or use a host that supports private
-repos such as Cloudflare Pages.
+### 1. Enable Pages
 
-Once the repo is public:
+1. Open <https://github.com/timkenar/links/settings/pages>.
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+3. Set the branch to `main` and the folder to `/ (root)`, then **Save**.
+4. Watch the **pages build and deployment** run under the **Actions** tab. It
+   usually finishes in under a minute.
+5. Open <https://timkenar.github.io/links/>.
 
-1. Go to **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select `main` and `/ (root)`, then save.
-4. The site appears at <https://timkenar.github.io/links/>.
+Every push to `main` republishes the site automatically. No Jekyll
+configuration or `.nojekyll` file is required for this structure.
 
-For the custom domain `links.ngazi.co.ke`, add it under **Custom domain**, then
-in Cloudflare DNS add a `CNAME` for `links` pointing to `timkenar.github.io`
-with the proxy **disabled** (DNS only) so GitHub can issue its certificate.
+### 2. Point links.ngazi.co.ke at it
 
-### Cloudflare Pages
+1. In the repo, go to **Settings → Pages → Custom domain**, enter
+   `links.ngazi.co.ke`, and save. GitHub commits a `CNAME` file to the repo.
+   Do not also create a `CNAME` file by hand — use one method or the other.
+2. In Cloudflare DNS for `ngazi.co.ke`, add:
+
+   | Type  | Name  | Target             | Proxy status |
+   | ----- | ----- | ------------------ | ------------ |
+   | CNAME | links | `timkenar.github.io` | **DNS only** |
+
+   The grey cloud (**DNS only**) matters: the orange-cloud proxy can block
+   GitHub's certificate validation. You can re-enable the proxy later if you
+   configure Cloudflare SSL deliberately, but DNS-only is the reliable setup.
+3. Wait for the DNS check in **Settings → Pages** to pass, then tick
+   **Enforce HTTPS**. GitHub issues the certificate automatically; it usually
+   takes a few minutes and can take up to 24 hours.
+
+Verify the setup:
+
+```bash
+dig +short links.ngazi.co.ke CNAME   # should print timkenar.github.io.
+curl -I https://links.ngazi.co.ke    # should return HTTP/2 200
+```
+
+### Troubleshooting
+
+| Symptom | Fix |
+| --- | --- |
+| 404 at `timkenar.github.io/links/` | Check that **Settings → Pages** uses `main` / `/ (root)` and that the Pages run under **Actions** finished. |
+| "Domain does not resolve" | DNS has not propagated, or the record is proxied. Set it to **DNS only** and wait. |
+| No **Enforce HTTPS** option | Wait for GitHub to issue the Let's Encrypt certificate, then reload the settings page. |
+| Old content after a push | Pages CDN cache; wait a minute and hard-refresh (`Ctrl+Shift+R`). |
+| **Pages** option unavailable | The repo is private on a free plan — make it public or use Cloudflare Pages below. |
+
+### Cloudflare Pages (alternative)
 
 Because `ngazi.co.ke` is already on Cloudflare, this is the shortest path to the
 custom domain:
