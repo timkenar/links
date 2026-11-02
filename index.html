@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timothy (@timkenar) — Links</title>
+    <meta
+      name="description"
+      content="Links for Timothy (@timkenar): YouTube, TikTok, Instagram, and the WhatsApp channel — all in one place."
+    />
+    <link rel="canonical" href="https://links.ngazi.co.ke/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#072144" />
+    <meta name="author" content="Timothy" />
+
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://links.ngazi.co.ke/" />
+    <meta property="og:title" content="Timothy (@timkenar) — Links" />
+    <meta
+      property="og:description"
+      content="YouTube, TikTok, Instagram, and WhatsApp — all in one place."
+    />
+    <meta property="og:image" content="https://links.ngazi.co.ke/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Timothy (@timkenar)" />
+    <meta property="og:site_name" content="Timothy" />
+    <meta property="og:locale" content="en_KE" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Timothy (@timkenar) — Links" />
+    <meta
+      name="twitter:description"
+      content="YouTube, TikTok, Instagram, and WhatsApp — all in one place."
+    />
+    <meta name="twitter:image" content="https://links.ngazi.co.ke/assets/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --navy-950: #031226;
+        --navy-900: #04192f;
+        --navy-800: #072144;
+        --ink: #072144;
+        --muted: #64748b;
+        --whatsapp-dark: #128c4a;
+        --radius: 16px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: 32px 16px;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        color: #fff;
+        background-color: var(--navy-900);
+        background-image:
+          radial-gradient(120% 70% at 50% -10%, rgba(10, 99, 179, 0.35) 0%, transparent 60%),
+          radial-gradient(90% 60% at 50% 115%, rgba(10, 99, 179, 0.18) 0%, transparent 65%),
+          linear-gradient(180deg, var(--navy-950) 0%, var(--navy-800) 52%, var(--navy-950) 100%);
+        background-attachment: fixed;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 440px;
+        padding: 32px 22px 24px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: 28px;
+        box-shadow:
+          0 24px 60px -12px rgba(0, 0, 0, 0.55),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .avatar {
+        display: block;
+        width: 112px;
+        height: 112px;
+        margin: 0 auto 14px;
+        object-fit: cover;
+        border-radius: 50%;
+        background: #0a2c59;
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.7);
+      }
+
+      h1 {
+        margin: 0 0 2px;
+        font-size: clamp(1.375rem, 5vw, 1.625rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+      }
+
+      .handle {
+        margin: 0 0 12px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #9fb3cc;
+      }
+
+      .tagline {
+        margin: 0 auto 24px;
+        max-width: 300px;
+        font-size: 0.9375rem;
+        line-height: 1.5;
+        color: #a7b8cd;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 0 22px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 10px 13px;
+        text-align: left;
+        text-decoration: none;
+        color: var(--ink);
+        background: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: var(--radius);
+        box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.45);
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease;
+      }
+
+      .link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 26px -10px rgba(0, 0, 0, 0.55);
+      }
+
+      .link:active {
+        transform: translateY(0) scale(0.995);
+      }
+
+      .link:focus-visible {
+        outline: 3px solid #7cc4ff;
+        outline-offset: 3px;
+      }
+
+      .link-icon {
+        flex: 0 0 auto;
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        color: #fff;
+      }
+
+      .link-icon svg {
+        width: 23px;
+        height: 23px;
+        fill: currentColor;
+      }
+
+      .link-icon--tiktok {
+        background: linear-gradient(160deg, #262626 0%, #000 100%);
+      }
+
+      .link-icon--youtube {
+        background: linear-gradient(160deg, #ff5a52 0%, #cc0000 100%);
+      }
+
+      .link-icon--instagram {
+        background: linear-gradient(
+          135deg,
+          #f9ce34 0%,
+          #ee2a7b 52%,
+          #6228d7 100%
+        );
+      }
+
+      .link-icon--whatsapp {
+        background: linear-gradient(160deg, #2ee06f 0%, var(--whatsapp-dark) 100%);
+      }
+
+      .link-text {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      .link-title {
+        display: block;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        line-height: 1.3;
+      }
+
+      .link-sub {
+        display: block;
+        margin-top: 1px;
+        font-size: 0.8125rem;
+        line-height: 1.35;
+        color: var(--muted);
+      }
+
+      .link-arrow {
+        flex: 0 0 auto;
+        width: 18px;
+        height: 18px;
+        color: #94a3b8;
+        transition: transform 0.18s ease;
+      }
+
+      .link:hover .link-arrow {
+        transform: translateX(2px);
+        color: var(--muted);
+      }
+
+      .divider {
+        height: 1px;
+        margin: 0 6px 18px;
+        border: 0;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.14),
+          transparent
+        );
+      }
+
+      .footer {
+        margin: 0;
+        font-size: 0.8125rem;
+        line-height: 1.6;
+        color: #8ea3bb;
+      }
+
+      .link.is-todo .link-sub {
+        color: #b45309;
+        font-weight: 500;
+      }
+
+      @media (max-width: 360px) {
+        body {
+          padding: 16px 12px;
+        }
+
+        .card {
+          padding: 26px 14px 20px;
+          border-radius: 22px;
+        }
+
+        .avatar {
+          width: 100px;
+          height: 100px;
+        }
+
+        .link {
+          gap: 11px;
+          padding: 10px 11px;
+        }
+
+        .link-icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .card {
+          animation: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+
+        .links li {
+          animation: rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+
+        .links li:nth-child(1) {
+          animation-delay: 0.08s;
+        }
+
+        .links li:nth-child(2) {
+          animation-delay: 0.16s;
+        }
+
+        .links li:nth-child(3) {
+          animation-delay: 0.24s;
+        }
+
+        .links li:nth-child(4) {
+          animation-delay: 0.32s;
+        }
+
+        @keyframes rise {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="card">
+      <img
+        class="avatar"
+        src="assets/timothy.jpg"
+        alt="Timothy"
+        width="480"
+        height="480"
+      />
+
+      <h1>Timothy</h1>
+      <p class="handle">@timkenar</p>
+      <p class="tagline">
+        Welcome to my corner of the internet. Follow along or say hello.
+      </p>
+
+      <nav aria-label="Timothy's links">
+        <ul class="links">
+          <li>
+            <a class="link" href="https://www.tiktok.com/@timkenar" target="_blank" rel="noopener">
+              <span class="link-icon link-icon--tiktok" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">TikTok</span>
+                <span class="link-sub">@timkenar</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="link" href="https://www.youtube.com/@timkenar" target="_blank" rel="noopener">
+              <span class="link-icon link-icon--youtube" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">YouTube</span>
+                <span class="link-sub">@timkenar</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="link" href="https://www.instagram.com/timkener/" target="_blank" rel="noopener">
+              <span class="link-icon link-icon--instagram" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">Instagram</span>
+                <span class="link-sub">@timkener</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- TODO: replace href with the WhatsApp channel link -->
+          <li>
+            <a class="link" href="#" data-placeholder="WhatsApp Channel" title="Channel link coming soon">
+              <span class="link-icon link-icon--whatsapp" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">WhatsApp Channel</span>
+                <span class="link-sub">Updates, straight from me</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr class="divider" />
+
+      <p class="footer">&copy; 2026 Timothy</p>
+    </main>
+
+    <script>
+      // Temporary: links still using href="#" show a short "coming soon" note
+      // instead of jumping to the top of the page. Remove data-placeholder
+      // once the real channel link is in place.
+      document.querySelectorAll("[data-placeholder]").forEach(function (link) {
+        var sub = link.querySelector(".link-sub");
+        var original = sub.textContent;
+        var timer;
+
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          clearTimeout(timer);
+          sub.textContent = link.dataset.placeholder + " link coming soon";
+          link.classList.add("is-todo");
+
+          timer = setTimeout(function () {
+            sub.textContent = original;
+            link.classList.remove("is-todo");
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>
