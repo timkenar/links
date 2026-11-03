@@ -24,6 +24,7 @@ published as-is.
 | Button               | Destination                                             | Status |
 | -------------------- | ------------------------------------------------------- | ------ |
 | AI Learning Platform | `https://skool.ngazi.co.ke`                             | live   |
+| Discord              | `https://discord.gg/V33UuGpcu`                          | live   |
 | LinkedIn             | `https://www.linkedin.com/in/timothy-chepkener/`        | live   |
 | TikTok               | `https://www.tiktok.com/@timkenar`                      | live   |
 | YouTube              | `https://www.youtube.com/@timkenar`                     | live   |
