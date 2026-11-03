@@ -21,15 +21,16 @@ published as-is.
 
 ## Links
 
-| Button           | Destination                                             | Status |
-| ---------------- | ------------------------------------------------------- | ------ |
-| Website          | `https://skool.ngazi.co.ke`                             | live   |
-| TikTok           | `https://www.tiktok.com/@timkenar`                      | live   |
-| YouTube          | `https://www.youtube.com/@timkenar`                     | live   |
-| Instagram        | `https://www.instagram.com/timkener/`                   | live   |
-| WhatsApp Group   | `https://chat.whatsapp.com/JHP9qxwgXSfL7eOBvmMgx2`      | live   |
-| WhatsApp Channel | `https://whatsapp.com/channel/0029VbClLptF6smzr9Or6o0h` | live   |
-| Email            | `mailto:timothy@ngazi.co.ke`                            | live   |
+| Button               | Destination                                             | Status |
+| -------------------- | ------------------------------------------------------- | ------ |
+| AI Learning Platform | `https://skool.ngazi.co.ke`                             | live   |
+| LinkedIn             | `https://www.linkedin.com/in/timothy-chepkener/`        | live   |
+| TikTok               | `https://www.tiktok.com/@timkenar`                      | live   |
+| YouTube              | `https://www.youtube.com/@timkenar`                     | live   |
+| Instagram            | `https://www.instagram.com/timkener/`                   | live   |
+| WhatsApp Group       | `https://chat.whatsapp.com/JHP9qxwgXSfL7eOBvmMgx2`      | live   |
+| WhatsApp Channel     | `https://whatsapp.com/channel/0029VbClLptF6smzr9Or6o0h` | live   |
+| Email                | `mailto:timothy@ngazi.co.ke`                            | live   |
 
 All rows point at real destinations, so the page no longer carries the
 `data-placeholder` "coming soon" script. To add another button, copy an
