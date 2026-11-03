@@ -6,7 +6,7 @@
     <title>Timothy (@timkenar) — Links</title>
     <meta
       name="description"
-      content="Links for Timothy (@timkenar): YouTube, TikTok, Instagram, and the WhatsApp channel — all in one place."
+      content="Links for Timothy (@timkenar): the Skool community, YouTube, TikTok, Instagram, the WhatsApp group and channel, and email — all in one place."
     />
     <link rel="canonical" href="https://links.ngazi.co.ke/" />
     <meta name="robots" content="index, follow" />
@@ -22,7 +22,7 @@
     <meta property="og:title" content="Timothy (@timkenar) — Links" />
     <meta
       property="og:description"
-      content="YouTube, TikTok, Instagram, and WhatsApp — all in one place."
+      content="Skool, YouTube, TikTok, Instagram, WhatsApp, and email — all in one place."
     />
     <meta property="og:image" content="https://links.ngazi.co.ke/assets/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -36,7 +36,7 @@
     <meta name="twitter:title" content="Timothy (@timkenar) — Links" />
     <meta
       name="twitter:description"
-      content="YouTube, TikTok, Instagram, and WhatsApp — all in one place."
+      content="Skool, YouTube, TikTok, Instagram, WhatsApp, and email — all in one place."
     />
     <meta name="twitter:image" content="https://links.ngazi.co.ke/assets/og-image.png" />
 
@@ -192,6 +192,14 @@
         fill: currentColor;
       }
 
+      .link-icon--website {
+        background: linear-gradient(160deg, #3b82f6 0%, #1d4ed8 100%);
+      }
+
+      .link-icon--email {
+        background: linear-gradient(160deg, #7f93ab 0%, #3f5570 100%);
+      }
+
       .link-icon--tiktok {
         background: linear-gradient(160deg, #262626 0%, #000 100%);
       }
@@ -266,11 +274,6 @@
         color: #8ea3bb;
       }
 
-      .link.is-todo .link-sub {
-        color: #b45309;
-        font-weight: 500;
-      }
-
       @media (max-width: 360px) {
         body {
           padding: 16px 12px;
@@ -331,6 +334,18 @@
           animation-delay: 0.32s;
         }
 
+        .links li:nth-child(5) {
+          animation-delay: 0.40s;
+        }
+
+        .links li:nth-child(6) {
+          animation-delay: 0.48s;
+        }
+
+        .links li:nth-child(7) {
+          animation-delay: 0.56s;
+        }
+
         @keyframes rise {
           from {
             opacity: 0;
@@ -364,6 +379,25 @@
 
       <nav aria-label="Timothy's links">
         <ul class="links">
+          <li>
+            <a class="link" href="https://skool.ngazi.co.ke" target="_blank" rel="noopener">
+              <span class="link-icon link-icon--website" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">AI Learning Platform</span>
+                <span class="link-sub">skool.ngazi.co.ke</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
           <li>
             <a class="link" href="https://www.tiktok.com/@timkenar" target="_blank" rel="noopener">
               <span class="link-icon link-icon--tiktok" aria-hidden="true">
@@ -421,9 +455,27 @@
             </a>
           </li>
 
-          <!-- TODO: replace href with the WhatsApp channel link -->
           <li>
-            <a class="link" href="#" data-placeholder="WhatsApp Channel" title="Channel link coming soon">
+            <a class="link" href="https://chat.whatsapp.com/JHP9qxwgXSfL7eOBvmMgx2" target="_blank" rel="noopener">
+              <span class="link-icon link-icon--whatsapp" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">WhatsApp Group</span>
+                <span class="link-sub">Join the conversation</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="link" href="https://whatsapp.com/channel/0029VbClLptF6smzr9Or6o0h" target="_blank" rel="noopener">
               <span class="link-icon link-icon--whatsapp" aria-hidden="true">
                 <svg viewBox="0 0 24 24" focusable="false">
                   <path
@@ -440,6 +492,25 @@
               </svg>
             </a>
           </li>
+
+          <li>
+            <a class="link" href="mailto:timothy@ngazi.co.ke">
+              <span class="link-icon link-icon--email" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+              </span>
+              <span class="link-text">
+                <span class="link-title">Email</span>
+                <span class="link-sub">timothy@ngazi.co.ke</span>
+              </span>
+              <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -447,28 +518,5 @@
 
       <p class="footer">&copy; 2026 Timothy</p>
     </main>
-
-    <script>
-      // Temporary: links still using href="#" show a short "coming soon" note
-      // instead of jumping to the top of the page. Remove data-placeholder
-      // once the real channel link is in place.
-      document.querySelectorAll("[data-placeholder]").forEach(function (link) {
-        var sub = link.querySelector(".link-sub");
-        var original = sub.textContent;
-        var timer;
-
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-          clearTimeout(timer);
-          sub.textContent = link.dataset.placeholder + " link coming soon";
-          link.classList.add("is-todo");
-
-          timer = setTimeout(function () {
-            sub.textContent = original;
-            link.classList.remove("is-todo");
-          }, 2000);
-        });
-      });
-    </script>
   </body>
 </html>

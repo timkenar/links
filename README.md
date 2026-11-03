@@ -21,18 +21,20 @@ published as-is.
 
 ## Links
 
-| Button           | Destination                                    | Status      |
-| ---------------- | ---------------------------------------------- | ----------- |
-| TikTok           | `https://www.tiktok.com/@timkenar`             | live        |
-| YouTube          | `https://www.youtube.com/@timkenar`            | live        |
-| Instagram        | `https://www.instagram.com/timkener/`          | live        |
-| WhatsApp Channel | `https://whatsapp.com/channel/<channel-id>`    | placeholder |
+| Button           | Destination                                             | Status |
+| ---------------- | ------------------------------------------------------- | ------ |
+| Website          | `https://skool.ngazi.co.ke`                             | live   |
+| TikTok           | `https://www.tiktok.com/@timkenar`                      | live   |
+| YouTube          | `https://www.youtube.com/@timkenar`                     | live   |
+| Instagram        | `https://www.instagram.com/timkener/`                   | live   |
+| WhatsApp Group   | `https://chat.whatsapp.com/JHP9qxwgXSfL7eOBvmMgx2`      | live   |
+| WhatsApp Channel | `https://whatsapp.com/channel/0029VbClLptF6smzr9Or6o0h` | live   |
+| Email            | `mailto:timothy@ngazi.co.ke`                            | live   |
 
-To finish the WhatsApp row, replace its `href="#"` in `index.html`, then remove
-the `data-placeholder` and `title` attributes from that link. The small script
-at the bottom only intercepts clicks on links that still have
-`data-placeholder`, showing a "coming soon" note instead of jumping to the top
-of the page.
+All rows point at real destinations, so the page no longer carries the
+`data-placeholder` "coming soon" script. To add another button, copy an
+existing `<li>`, swap the icon and text, and add a matching
+`.links li:nth-child(n)` animation delay in the stylesheet.
 
 > **Handle check:** Instagram is set to `timkener`, as provided, while TikTok
 > and YouTube use `timkenar`. If the Instagram handle is also `timkenar`,
